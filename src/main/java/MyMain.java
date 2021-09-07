@@ -24,8 +24,14 @@ public class MyMain {
     // Takes a String as input, and returns true if the String contains an 'A' or 'a'
     // and returns false otherwise
     public static boolean checkIfA(String str) {
-        // REPLACE THIS WITH YOUR CODE
-        return false;
+        int x = str.indexOf("A");
+        int y = str.indexOf("a");
+        if (x != -1 || y != -1){ //(x == -1 && y == -1) would also work changing return true and false around. return false if cant find both of them
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     //  Takes in two Strings as input and returns a String equal to those two Strings added
