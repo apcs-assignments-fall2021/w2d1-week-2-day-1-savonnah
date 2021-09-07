@@ -2,8 +2,23 @@ public class MyMain {
     // Takes two Strings as input, and returns a String equal to the first half
     // of the shorter String plus the second half of the longer String.
     public static String halfAdder(String str1, String str2) {
-        // REPLACE THIS WITH YOUR CODE
-        return "";
+        int a = str1.length();
+        int b = str2.length();
+        if (a>b){
+            int c = a/2;
+            int d = b/2;
+            String e = str1.substring(c,a);
+            String f = str2.substring(0,d);
+            return (f+e);
+        }
+        else{
+            int c = a/2;
+            int d = b/2;
+            String e = str1.substring(0,c);
+            String f = str2.substring(d,b);
+            return (e+f);
+        }
+
     }
 
     // Takes a String as input, and returns true if the String contains an 'A' or 'a'
